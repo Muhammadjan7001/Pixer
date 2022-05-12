@@ -1,0 +1,135 @@
+.nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 18px 0;
+}
+.nav-logo{
+   cursor: pointer;
+}
+.navigation {
+   display: flex;
+}
+.menu-items {
+   display: flex;
+   align-items: center;
+   margin-right: 24px;
+}
+.menu-item:not(:last-child) {
+   margin-right: 32px;
+}
+.menu-link {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   color: #000000;
+   transition: all 0.2s ease;
+}
+.menu-link:hover{
+   color: #05a3dc;
+   text-decoration: underline;
+}
+.all-btn {
+   border: none;
+   background: #00BAFC;
+   border-radius: 5px;
+   color: #fff;
+   padding: 8px 16px;
+   transition: all 0.3s ease;
+}
+.all-btn:hover{
+   background: #05a3dc;
+}
+@media screen and (max-width: 1200px){
+   .header{
+      width: 90%;
+      margin: 0 auto;
+   }
+}
+@media screen and (max-width: 992px) {
+   .header{
+      width: 90%;
+      margin: 0 auto;
+   }
+   .nav{
+      width: 100%;
+      flex-direction: row;
+      height: 100%;
+      align-content: center;
+   }
+   .navigation{
+      gap: 60px;
+      justify-content: space-between;
+   }
+   .menu-items {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+   }
+   .menu-item:not(:last-child) {
+      margin-right: 20px;
+   }
+   .menu-link {
+      font-size: 14px;
+      line-height: 16px;
+   }
+   .all-btn {
+      background: #00BAFC;
+      border-radius: 5px;
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 11px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .header{
+      width: 90%;
+   }
+   .nav{
+      width: 100%;
+      flex-direction: column;
+   }
+   .navigation{
+      margin-top: 14px;
+   }
+   .menu-items {
+      display: flex;
+      align-items: center;
+      margin-right: 0px;
+   }
+   .menu-item:not(:last-child) {
+      margin-right: 10px;
+   }
+   .menu-link {
+      font-size: 13px;
+      line-height: 16px;
+   }
+   .all-btn {
+      background: #00BAFC;
+      border-radius: 5px;
+      color: #fff;
+      padding: 6px 8px;
+      font-size: 10px;
+   }
+}
+@media screen and (max-width: 576px) {
+   .nav{
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 0px;
+   }
+   .burger-box{
+      display: block;
+   }
+   .menu-items{
+      display: none;
+   }
+   .navigation .all-btn{
+      display: none;
+   }
+}
+@media screen and (min-width: 576.1px) {
+   .burger-box{
+      display: none;
+   }
+}

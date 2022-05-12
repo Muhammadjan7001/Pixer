@@ -1,0 +1,55 @@
+@import url(./components/header.css);
+@import url(./components/main-section.css);
+@import url(./components/services.css);
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a{
+   text-decoration: none;
+}
+li{
+   list-style: none;
+}  
+.container{
+   max-width: 1100px;
+   margin: 0 auto;
+}
+.burger{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   transform: rotate(180deg);
+}
+.burger::before{
+   position: absolute;
+   content: "";
+   width: 36px;
+   height: 3px;
+   background-color: #000;
+   transform: translateY(10px);
+   transition: all 0.2s ease-out;
+}
+.burger::after{
+   position: absolute;
+   content: "";
+   width: 36px;
+   height: 3px;
+   box-shadow: 0 10px 0 #000;
+   background-color: #000;
+   transform: translateY(-10px);
+   transition: all 0.2s ease-out;
+}
+.burger.active::before {
+   transform: rotate(-45deg);
+}
+.burger.active::after {
+   transform: rotate(45deg);
+   box-shadow: 0 0px 0 #000;
+}
